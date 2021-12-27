@@ -55,16 +55,20 @@ bot.on('message', ctx => {
     ctx.deleteMessage();
     bot.telegram.sendMessage(ctx.chat.id, startMessage, {
         reply_markup: {
-            inline_keyboard: [
-                [{
+            inline_keyboard: 
+            [
+                [
+                    {
                         text: "Хочу комплиментик 🥺👉🏻👈🏻 ",
                         callback_data: 'комплимент'
                     },
+                ],
+                [
                     {
                         text: "Хочу картиночку 🤤",
                         callback_data: 'картинка'
-                    }
-                ],
+                    },
+                ]
     
             ]
         }
@@ -79,16 +83,20 @@ bot.action('картинка', ctx => {
     }, 
     {
         reply_markup: {
-            inline_keyboard: [
-                [{
+            inline_keyboard: 
+            [
+                [
+                    {
                         text: "Хочу комплиментик 🥺👉🏻👈🏻 ",
                         callback_data: 'комплимент'
                     },
+                ],
+                [
                     {
                         text: "Хочу картиночку 🤤",
                         callback_data: 'картинка'
-                    }
-                ],
+                    },
+                ]
     
             ]
         }
@@ -101,15 +109,18 @@ bot.action('комплимент', ctx => {
     ctx.reply(compliment, {
         reply_markup: {
             inline_keyboard: [
-                [{
+                [
+                    {
                         text: "Хочу комплиментик 🥺👉🏻👈🏻 ",
                         callback_data: 'комплимент'
                     },
+                ],
+                [
                     {
                         text: "Хочу картиночку 🤤",
                         callback_data: 'картинка'
-                    }
-                ],
+                    },
+                ]
     
             ]
         }
