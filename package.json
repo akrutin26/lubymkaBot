@@ -1,19 +1,16 @@
 {
-  "name": "package",
+  "name": "lubymkabot",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akrutin26/tgBot.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akrutin26/tgBot/issues"
-  },
-  "homepage": "https://github.com/akrutin26/tgBot#readme"
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "telegraf": "^4.5.2"
+  }
 }
